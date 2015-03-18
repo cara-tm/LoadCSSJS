@@ -21,6 +21,6 @@ Examples:
 With CSS: Don't forget to add a fallback within your HTML document:
 i.e.
 
-    <noscript><link rel="stylesheet" href="../css/main.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="../css/main.css"></noscript>
 
 For best old browsers compatibility, include this script into your HTML document, then call your external CSS file(s) just after it.
