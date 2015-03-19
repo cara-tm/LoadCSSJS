@@ -13,7 +13,7 @@ Usage syntax:
     
     /*! Load javascript: LoadCSSJS("file", "js") */
 
-Note that each loading calls, the one after the other, determines the order of files into your &lt;head&gt; document part. 
+Note that each loading calls, the one after the other, determines the order of files added into your &lt;head&gt; document part. 
 
 Examples:
 
