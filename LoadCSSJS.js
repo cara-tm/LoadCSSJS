@@ -1,6 +1,18 @@
-function LoadCSSJS(e, t, m){
+var els = "";
+
+function LoadCSSJS(e, t, m) {
 
 	"use strict";
+	
+	if (els.indexOf("["+e+"]") == -1) {
+		Moader(e, t, m);
+		els += "["+e+"]";
+	}
+	else
+		alert("File "+e+" already added!");
+	
+}
+function Loader(e, t, m){
 
 	if (t == "css") {
 		var f=document.createElement("link");
