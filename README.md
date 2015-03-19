@@ -25,4 +25,4 @@ i.e.
 
     <noscript><link rel="stylesheet" href="../css/main.min.css"></noscript>
 
-For best old browsers compatibility, include this script into your HTML document, then call your external CSS file(s) just after it.
+
