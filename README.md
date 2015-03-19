@@ -13,6 +13,8 @@ Usage syntax:
     
     /*! Load javascript: LoadCSSJS("file", "js") */
 
+Note that each loading calls, the one after the other, determines the order of files into your &lt;head&gt; document part. 
+
 Examples:
 
     LoadCSSJS("../css/main.min.css", "css", "all");
