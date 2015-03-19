@@ -19,10 +19,13 @@ Examples:
 
     LoadCSSJS("../css/main.min.css", "css", "all");
     LoadCSSJS("../js/initial.js", "js");
+    LoadCSSJS("../css/fonts-base64.min.css", "css", "only screen");
 
 With CSS: Don't forget to add a fallback within your HTML document:
 i.e.
 
     <noscript><link rel="stylesheet" href="../css/main.min.css"></noscript>
 
+See test.html to see it in action.
 
+We do this because the [Google advice](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery) doesn't support multiple files.
