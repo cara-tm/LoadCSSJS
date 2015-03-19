@@ -5,7 +5,7 @@ function LoadCSSJS(e, t, m) {
 	"use strict";
 	
 	if (els.indexOf("["+e+"]") == -1) {
-		Moader(e, t, m);
+		Loader(e, t, m);
 		els += "["+e+"]";
 	}
 	else
