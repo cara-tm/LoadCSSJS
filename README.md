@@ -26,6 +26,6 @@ i.e.
 
     <noscript><link rel="stylesheet" href="../css/main.min.css"></noscript>
 
-See test.html to see it in action.
+Check the test.html file to see it in action.
 
 We do this because the [Google advice](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery) doesn't support multiple files.
