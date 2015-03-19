@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+<meta charset="utf-8">
+<title>LoadCSSJS Test</title>
+<script>
+function LoadCSSJS(e,t,r){"use strict";-1==els.indexOf("["+e+"]")?(Loader(e,t,r),els+="["+e+"]"):alert("File "+e+" already added!")}function Loader(e,t,r){if("css"==t){var s=document.createElement("link");s.setAttribute("rel","stylesheet"),s.setAttribute("href",e),r?"":r="all",s.setAttribute("media",r),s.setAttribute("type","text/css")}else if("js"==t){var s=document.createElement("script");s.setAttribute("type","text/javascript"),s.setAttribute("src",e)}if("undefined"!=typeof s){var a=document.getElementsByTagName("script");a=a[a.length-1],a.parentNode.insertBefore(s,a)}}var els="";
+		
+LoadCSSJS("http://www.google.com/css/maia.css", "css");
+LoadCSSJS("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en", "css", "only screen");
+
+</script>
+<body>
+<div class="maia-header" id="maia-header" role="banner">
+      <div class="maia-aux">
+        <h1>
+          <a data-g-label="Google" data-g-action="Maia: Header" data-g-event="Maia: Header" href="/"><img alt="Google" src="http://www.google.com/images/logos/google_logo_41.png"></a>
+        </h1><a class="maia-teleport" href="#content">Skip to content</a>
+        <div class="maia-util">
+          <a data-g-label="Sign in" href="https://accounts.google.com/ServiceLogin?service=mail&amp;continue=https://mail.google.com/mail/" id="gmail-sign-in">Sign in</a> <a data-g-action="Maia: Primary – Header" data-g-event="Maia: Button" class="maia-button" data-g-label="Create an account button" href="https://accounts.google.com/SignUp?service=mail&amp;continue=http%3A%2F%2Fmail.google.com%2Fmail%2F%3Fpc%3Dtopnav-about-en" id="gmail-create-account">Create an account</a>
+        </div>
+      </div>
+</div>
+
+</body></html>
