@@ -29,7 +29,7 @@ function Loader(e, t, m){
 	if (typeof f != "undefined") {
 		var a = document.getElementsByTagName("head");
 		a = a[a.length-1];
-		a.appendChild(s,a);
+		a.appendChild(s);
 	}
 
 }
