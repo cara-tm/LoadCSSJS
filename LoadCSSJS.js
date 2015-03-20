@@ -27,20 +27,9 @@ function Loader(e, t, m){
         	f.setAttribute("src", e);
 	}
 	if (typeof f != "undefined") {
-		document.getElementsByTagName("head")[0].appendChild(f);
-		var s = document.getElementsByTagName("script");
-		s.parentNode.insertBefore(f, s);
+		var a = document.getElementsByTagName("head");
+		a = a[a.length-1];
+		a.appendChild(s,a);
 	}
-	
-	function toggle() {
-		for (var e, t=0; t < a.length; ++t)
-			a[t].e&&a[t].e.indexOf(href) > -1 && (e=!0);
-
-		e || setTimeout(toggle)
-	}
-	
-	var a = window.document.styleSheets;
-	var i = window.document.getElementsByTagName("script")[0];
-	r();
 
 }
