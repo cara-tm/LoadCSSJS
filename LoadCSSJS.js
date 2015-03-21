@@ -1,8 +1,8 @@
-var els = "";
-
 function LoadCSSJS(e, t, m) {
 
 	"use strict";
+	
+	var els = "";
 	
 	if (els.indexOf("["+e+"]") == -1) {
 		Loader(e, t, m);
