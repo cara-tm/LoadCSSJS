@@ -28,6 +28,6 @@ i.e.
 
 Check the test.html file to see it in action.
 
-If you don't need javascript loader, use the LoadCSS.min.js very light version of 0.51 kb instead. Same usage, but the "type" (second) attribut isn't supported (i.e.: LoadCSS("../css/main.min.css", "only screen");). 
+If you don't need javascript loader, use the LoadCSS.min.js very light version of 0.296 kb instead ( 0.382 kb with copyright notice). Same usage, but the "type" (second) attribut isn't supported (i.e.: `LoadCSS("../css/main.min.css", "only screen");`) and do not prevent multiple same files loading (no warning message). 
 
 We do this because the [Google advice](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery) doesn't support multiple files.
