@@ -1,7 +1,7 @@
 # LoadCSSJS
 ==========
 
-### Simple CSS or JS loader asynchronously for all browsers by cara-tm.com, MIT Licence
+### Simple CSS or JS loader asynchronously for all browsers by cara-tm.com, MIT License
 
 Very light: only 0.569 kb (LoadCSSJS.min.js: 0.657 kb with copyright notice). Pure vanilla javascript, libraries independent. Can be incorporated into &lt;head&gt; or just before the last &lt;/body&gt; tag. Useful for RWD. Tested in IE 5.x and all browsers. For CSS files: split your CSS into 2 files, one for "Above The Fold" included into your HTML document; the second one loaded with this little tool.
 
