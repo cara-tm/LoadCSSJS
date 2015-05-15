@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+<meta charset="utf-8">
+<title>LoadCSSJS Test</title>
+<style>
+/*
+ * Critical CSS rules come here (above the fold rendering)
+*/
+
+/* Just for this demo: vertical alignment corrections for old browsers */
+#maia-header .maia-util{
+	padding-top:10px
+}
+#maia-header .maia-util a.maia-button{
+    margin:0 0 0 10px !important
+}
+</style>
+<script>
+/*! Simple CSS loader asynchronously for all browsers by cara-tm.com, MIT Licence */
+function LoadCSS(e,m){"use strict";var s=document.createElement("link");s.setAttribute("rel","stylesheet"),s.setAttribute("href",e),m?"":m="all",s.setAttribute("media",m),s.setAttribute("type","text/css");if("undefined"!=typeof s){var a=document.getElementsByTagName("head"),r=document.getElementsByTagName('script')[0];a=a[a.length-1],a.appendChild(s);r.parentNode.insertBefore(s,r)}}
+
+LoadCSS("http://www.google.com/css/maia.css", "all");
+LoadCSS("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en", "only screen");
+</script>
+<noscript>
+<link rel="stylesheet" href="http://www.google.com/css/maia.css" media="all">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en" media="only screen">
+</noscript>
+</head>
+<body>
+<div class="maia-header" id="maia-header" role="banner">
+      <div class="maia-aux">
+        <h1>
+          <a data-g-label="Google" data-g-action="Maia: Header" data-g-event="Maia: Header" href="/"><img alt="Google" src="http://www.google.com/images/logos/google_logo_41.png"></a>
+        </h1><a class="maia-teleport" href="#content">Skip to content</a>
+        <div class="maia-util">
+          <a data-g-label="Sign in" href="https://accounts.google.com/ServiceLogin?service=mail&amp;continue=https://mail.google.com/mail/" id="gmail-sign-in">Sign in</a> <a data-g-action="Maia: Primary – Header" data-g-event="Maia: Button" class="maia-button" data-g-label="Create an account button" href="https://accounts.google.com/SignUp?service=mail&amp;continue=http%3A%2F%2Fmail.google.com%2Fmail%2F%3Fpc%3Dtopnav-about-en" id="gmail-create-account">Create an account</a>
+        </div>
+      </div>
+</div>
+<script>
+/*
+ * Or you can put it all there, as well:
+/*! Simple CSS loader asynchronously for all browsers by cara-tm.com, MIT Licence */
+function LoadCSS(e,m){"use strict";var s=document.createElement("link");s.setAttribute("rel","stylesheet"),s.setAttribute("href",e),m?"":m="all",s.setAttribute("media",m),s.setAttribute("type","text/css");if("undefined"!=typeof s){var a=document.getElementsByTagName("head"),r=document.getElementsByTagName('script')[0];a=a[a.length-1],a.appendChild(s);r.parentNode.insertBefore(s,r)}}
+
+LoadCSS("http://www.google.com/css/maia.css", "all");
+LoadCSS("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en", "only screen");
+*/
+</script>
+</body></html>
