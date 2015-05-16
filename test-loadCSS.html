@@ -18,7 +18,7 @@
 </style>
 <script>
 /*! Simple CSS loader asynchronously for all browsers by cara-tm.com, MIT License */
-function LoadCSS(e,m){"use strict";var s=document.createElement("link");s.setAttribute("rel","stylesheet"),s.setAttribute("href",e),m?"":m="all",s.setAttribute("media",m),s.setAttribute("type","text/css");if("undefined"!=typeof s){var a=document.getElementsByTagName("head"),r=document.getElementsByTagName('script')[0];a=a[a.length-1],a.appendChild(s);r.parentNode.insertBefore(s,r)}}
+function LoadCSS(e,m){"use strict";var s=document.createElement("link");s.setAttribute("rel","stylesheet"),s.setAttribute("href",e),m?"":m="all",s.setAttribute("media",m),s.setAttribute("type","text/css");if("undefined"!=typeof s){var a=document.getElementsByTagName("head")[0]||document.documentElement;a.insertBefore(s,a.firstChild)}}
 
 LoadCSS("http://www.google.com/css/maia.css", "all");
 LoadCSS("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en", "only screen");
@@ -43,7 +43,7 @@ LoadCSS("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;la
 /*
  * Or you can put it all there, as well:
 /*! Simple CSS loader asynchronously for all browsers by cara-tm.com, MIT License */
-function LoadCSS(e,m){"use strict";var s=document.createElement("link");s.setAttribute("rel","stylesheet"),s.setAttribute("href",e),m?"":m="all",s.setAttribute("media",m),s.setAttribute("type","text/css");if("undefined"!=typeof s){var a=document.getElementsByTagName("head"),r=document.getElementsByTagName('script')[0];a=a[a.length-1],a.appendChild(s);r.parentNode.insertBefore(s,r)}}
+function LoadCSS(e,m){"use strict";var s=document.createElement("link");s.setAttribute("rel","stylesheet"),s.setAttribute("href",e),m?"":m="all",s.setAttribute("media",m),s.setAttribute("type","text/css");if("undefined"!=typeof s){var a=document.getElementsByTagName("head")[0]||document.documentElement;a.insertBefore(s,a.firstChild)}}
 
 LoadCSS("http://www.google.com/css/maia.css", "all");
 LoadCSS("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en", "only screen");
