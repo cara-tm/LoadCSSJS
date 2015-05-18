@@ -30,10 +30,10 @@ Check the test.html file to see it in action.
 
 ### LoadCSS.min.js
 
-If you don't need a javascript loader, use the LoadCSS.min.js very light version of 0.336 kb instead (0.421 kb with copyright notice). Same usage (i.e.: `LoadCSS("../css/main.min.css", "only screen");`). A debug mode is available to check if there are multiple same files loading (for your development process via warning messages). If not set, no controls are processed.
+If you don't need a javascript loader, use the LoadCSS.min.js very light version of 0.398 kb instead (0.484 kb with copyright notice). Same usage (i.e.: `LoadCSS("../css/main.min.css", "only screen");`). A debug mode is available to check if there are multiple same files loading (for your development process via warning messages). If not set, no controls are processed.
 
 Example:
 
-    LoadCSS("../css/main.min.css", "only screen", "debug");
+    LoadCSS("../css/main.min.css", "only screen");
 
 We do this because the [Google advice](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery) doesn't support multiple files (code shown only for US visitors not for others).
