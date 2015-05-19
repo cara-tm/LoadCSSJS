@@ -30,7 +30,7 @@ Check the test.html file to see it in action.
 
 ### LoadCSS.min.js
 
-If you don't need a javascript loader, use the LoadCSS.min.js very light version of 0.249 kb instead (0.335 kb with copyright notice). Same usage (i.e.: `LoadCSS("../css/main.min.css", "only screen");`). A debug mode is available to check if there are multiple same files loading (for your development process via warning messages). If not set, no controls are processed.
+If you don't need a javascript loader, use the [LoadCSS.min.js](https://github.com/cara-tm/LoadCSSJS/blob/master/LoadCSS.min.js) very light version of 0.249 kb instead (0.335 kb with copyright notice). Same usage (i.e.: `LoadCSS("../css/main.min.css", "only screen");`). A debug mode is available to check if there are multiple same files loading (for your development process via warning messages). If not set, no controls are processed.
 
 Example:
 
