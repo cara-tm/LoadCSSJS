@@ -38,3 +38,7 @@ Example:
     LoadCSS("../css/main.min.css", "only screen");
 
 We do this because the [Google advice](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery) doesn't support multiple files (code shown only for US visitors not for others).
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/cara-tm/loadcssjs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
