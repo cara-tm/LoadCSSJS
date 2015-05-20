@@ -37,6 +37,8 @@ Example:
 
     LoadCSS("../css/main.min.css", "only screen");
 
+Online live demo: [jsfiddle.net](http://jsfiddle.net/9ehh6xnx/)
+
 We do this because the [Google advice](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery) doesn't support multiple files (code shown only for US visitors not for others).
 
 
