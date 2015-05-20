@@ -30,7 +30,7 @@ Check the test.html file to see it in action.
 
 ### LoadCSS.min.js
 
-If you don't need a javascript loader, use the [LoadCSS.min.js](https://github.com/cara-tm/LoadCSSJS/blob/master/LoadCSS.min.js) very light version of 0.249 kb instead (0.335 kb with copyright notice). Same usage (i.e.: `LoadCSS("../css/main.min.css", "only screen");`).
+If you don't need a javascript loader, use the [LoadCSS.min.js](https://github.com/cara-tm/LoadCSSJS/blob/master/loadcss.min.js) very light version of 0.249 kb instead (0.335 kb with copyright notice). Same usage (i.e.: `LoadCSS("../css/main.min.css", "only screen");`).
 Tested successfully in Internet Explorer 5.5 (and above ;) ).
 
 Example:
