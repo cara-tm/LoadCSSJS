@@ -3,6 +3,6 @@
   "name": "LoadCSS",
   "repo": "cara-tm/LoadCSSJS",
   "files": {
-    "include": ["LaodCSS.min.js"]
+    "include": ["laodcss.min.js"]
   }
 }
