@@ -18,7 +18,7 @@
 </style>
 <script>
 /*! Simple CSS loader asynchronously for all browsers by cara-tm.com, MIT License */
-function LoadCSS(e,m){"use strict";var r=document.createElement("link");if(m?"":m="all",r.rel="stylesheet",r.href=e,r.media=m,r.type="text/css","undefined"!=typeof r){var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(r,s);}}
+var e,m;function LoadCSS(e,m){"use strict";var r=document.createElement("link");if(m?"":m="all",r.rel="stylesheet",r.href=e,r.media=m,"undefined"!=typeof r){var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(r,s);}}
 
 LoadCSS("http://www.google.com/css/maia.css", "all");
 LoadCSS("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en", "only screen");
@@ -43,8 +43,8 @@ LoadCSS("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;la
 /* Or you can put it all there, as well: */
 /*! Simple CSS loader asynchronously for all browsers by cara-tm.com, MIT License */
 /*
-function LoadCSS(e,m){"use strict";var r=document.createElement("link");if(m?"":m="all",r.rel="stylesheet",r.href=e,r.media=m,r.type="text/css","undefined"!=typeof r){var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(r,s);}}
-
+var e,m;function LoadCSS(e,m){"use strict";var r=document.createElement("link");if(m?"":m="all",r.rel="stylesheet",r.href=e,r.media=m,"undefined"!=typeof r){var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(r,s);}}
+// Or only these lines:
 LoadCSS("http://www.google.com/css/maia.css", "all");
 LoadCSS("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en", "only screen");
 */
