@@ -18,7 +18,7 @@
 </style>
 <script>
 /*! Simple CSS JS loader asynchronously for all browsers by cara-tm.com, MIT License */
-function LoadCSSJS(e,t,r){"use strict";var b="";-1==b.indexOf("["+e+"]")?(Loader(e,t,r),b+="["+e+"]"):alert("File "+e+" already added!")}function Loader(e,t,r){if("css"==t){var s=document.createElement("link");s.setAttribute("rel","stylesheet"),s.setAttribute("href",e),r?"":r="all",s.setAttribute("media",r),s.setAttribute("type","text/css")}else if("js"==t){var s=document.createElement("script");s.setAttribute("type","text/javascript"),s.setAttribute("src",e)}if("undefined"!=typeof s){var a=document.getElementsByTagName("head");a=a[a.length-1],a.appendChild(s)}}
+var e,t,r;function LoadCSSJS(e,t,r){"use strict";if("css"==t){var s=document.createElement("link");s.rel="stylesheet",s.href=e,r?"":r="all",s.media=r}else if("js"==t){var s=document.createElement("script");s.type="text/javascript",s.src=e}if("undefined"!=typeof s){var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(s,a);}}
 
 LoadCSSJS("http://www.google.com/css/maia.css", "css");
 LoadCSSJS("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en", "css", "only screen");
