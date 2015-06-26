@@ -27,7 +27,7 @@ i.e.
 
     <noscript><link rel="stylesheet" href="../css/main.min.css"></noscript>
 
-Check the test.html file to see it in action. Online live demo: [jsfiddle.net](http://jsfiddle.net/jdd6s1e3/3/)
+Check the test.html file to see it in action. Online live demo: [jsfiddle.net](http://jsfiddle.net/jdd6s1e3/4/)
 
 ### LoadCSS.min.js
 
