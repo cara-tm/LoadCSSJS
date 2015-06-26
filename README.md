@@ -9,17 +9,18 @@ CSS links are always included asynchronously into HTML document before all scrip
 
 Usage syntax:
 
-    /*! Load styles: LoadCSSJS("file", "css", "media properties|all") */
+    /*! Load styles: LoadCSSJS("file", "css", { empty|media: "media properties|all" }) */
     
-    /*! Load javascript: LoadCSSJS("file", "js") */
+    /*! Load javascript: LoadCSSJS("file", "js", { empty|defer|asyn: "defer|async"}) */
 
 Note that each loading calls, the one after the other, determines the order of files added into your &lt;head&gt; document part. 
 
 Examples:
 
-    LoadCSSJS("../css/main.min.css", "css", "all");
-    LoadCSSJS("../js/initial.js", "js");
-    LoadCSSJS("../css/fonts-base64.min.css", "css", "only screen");
+    LoadCSSJS("../css/main.min.css", "css", { rel: "prefetch"});
+    LoadCSSJS("../js/initial.js", "js", {defer: "defer"});
+    LoadCSSJS("https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js", "js", {});
+    LoadCSSJS("../css/fonts-base64.min.css", "css", { rel: "stylesheet", media: "only screen" });
 
 With CSS: Don't forget to add a fallback within your HTML document:
 i.e.
