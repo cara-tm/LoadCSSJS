@@ -1,4 +1,5 @@
-var LoadCSSJS=function ( e, t, o ) {
+
+var LoadCSSJS = function ( e, t, o ) {
 
 	"use strict";
 
@@ -32,7 +33,6 @@ var LoadCSSJS=function ( e, t, o ) {
 
 		var a = document.getElementsByTagName( "script" )[0];
 		a.parentNode.insertBefore(s, a);
-	}
 
 	} else {
 
