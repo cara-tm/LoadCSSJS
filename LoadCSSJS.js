@@ -1,35 +1,41 @@
-function LoadCSSJS(e, t, m) {
+var LoadCSSJS=function ( e, t, o ) {
 
 	"use strict";
-	
-	var els = "";
-	
-	if (els.indexOf("["+e+"]") == -1) {
-		Loader(e, t, m);
-		els += "["+e+"]";
-	}
-	else
-		alert("File "+e+" already added!");
-	
-}
-function Loader(e, t, m){
 
-	if (t == "css") {
-		var f=document.createElement("link");
-		f.setAttribute("rel", "stylesheet");
-    		f.setAttribute("href", e);
-    		(m ? "" : m="all");
-    		f.setAttribute("media", m);
-    		f.setAttribute("type", "text/css");
-	} else if (t == "js") {
-		var f = document.createElement("script");
-		f.setAttribute("type", "text/javascript");
-        	f.setAttribute("src", e);
+	var f="", s;
+
+	if( f.indexOf("["+e+"]") == -1 ) {
+		f += "["+e+"]";
+
+		switch (t) {
+
+			case "css":
+				s = document.createElement("link");
+				s.rel = ( o.rel || "stylesheet" );
+				s.href = e;
+				s.media = ( o.media || "all" );
+			break;
+
+			case "js":
+				s = document.createElement("script");
+				o.defer ? s.defer = "defer" : s.async = "async";
+				s.type = "text/javascript";
+				s.src = e;
+			break;
+
+		}
+
 	}
-	if (typeof f != "undefined") {
-		var a = document.getElementsByTagName("head");
-		a = a[a.length-1];
-		a.appendChild(s);
+	
+	if ( "undefined" != typeof s) {
+
+		var a = document.getElementsByTagName("script")[0];
+		a.parentNode.insertBefore(s, a);
 	}
 
-}
+	} else {
+
+		alert( "File: \""+e+"\" already loaded (keep only one)!" );
+	}
+	
+};
