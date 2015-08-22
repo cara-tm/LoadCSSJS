@@ -5,19 +5,20 @@ var LoadCSSJS=function ( e, t, o ) {
 	var f="", s;
 
 	if( f.indexOf("["+e+"]") == -1 ) {
+
 		f += "["+e+"]";
 
 		switch (t) {
 
-			case "css":
-				s = document.createElement("link");
+			case "css" :
+				s = document.createElement( "link" );
 				s.rel = ( o.rel || "stylesheet" );
 				s.href = e;
 				s.media = ( o.media || "all" );
 			break;
 
-			case "js":
-				s = document.createElement("script");
+			case "js" :
+				s = document.createElement( "script" );
 				o.defer ? s.defer = "defer" : s.async = "async";
 				s.type = "text/javascript";
 				s.src = e;
@@ -27,9 +28,9 @@ var LoadCSSJS=function ( e, t, o ) {
 
 	}
 	
-	if ( "undefined" != typeof s) {
+	if ( "undefined" != typeof s ) {
 
-		var a = document.getElementsByTagName("script")[0];
+		var a = document.getElementsByTagName( "script" )[0];
 		a.parentNode.insertBefore(s, a);
 	}
 
