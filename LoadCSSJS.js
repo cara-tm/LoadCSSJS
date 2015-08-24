@@ -1,4 +1,4 @@
-
+/*! Simple CSS JS loader asynchronously for all browsers by cara-tm.com, MIT License */
 var LoadCSSJS = function ( e, t, o ) {
 
 	"use strict";
@@ -20,8 +20,10 @@ var LoadCSSJS = function ( e, t, o ) {
 
 			case "js" :
 				s = document.createElement( "script" );
-				o.defer ? s.defer = "defer" : s.async = "async";
-				s.type = "text/javascript";
+				if (o.defer)
+					s.defer = "defer";
+				else
+					s.async = "async";
 				s.src = e;
 			break;
 
