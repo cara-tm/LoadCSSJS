@@ -44,7 +44,7 @@ We do this because the [Google advice](https://developers.google.com/speed/docs/
 
 ### Advanced version
 
-Here is an another version of LoadCSSJS with **support for browser windows width**: [jsfiddle.net](http://jsfiddle.net/wqysp5uf/2)
+Here is an another version of LoadCSSJS with **support for browser windows width**: [jsfiddle.net](http://jsfiddle.net/wqysp5uf/3)
 
 
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/cara-tm/loadcssjs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
