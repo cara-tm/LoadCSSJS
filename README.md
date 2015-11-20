@@ -7,6 +7,8 @@ Very light: only 0.436 kb (LoadCSSJS.min.js: 0.524 kb with copyright notice). Pu
 
 CSS links are always included asynchronously into HTML document before all scripts, if present into the head part (for best practices).
 
+Useful in RWD in order to control what you want to serve for each user agents ([because even stylesheets are always loaded](http://scottjehl.github.io/CSS-Download-Tests/)).
+
 Usage syntax:
 
     /*! Load styles: LoadCSSJS("file", "css", { empty|media: "media properties|all" }) */
