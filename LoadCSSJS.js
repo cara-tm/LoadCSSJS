@@ -15,7 +15,9 @@ var LoadCSSJS = function ( e, t, o ) {
 				s = document.createElement( "link" );
 				s.rel = ( o.rel || "stylesheet" );
 				s.href = e;
-				s.media = ( o.media || "all" );
+				// Temporary invalid media query to load it async
+				s.media = "only foo";
+				setTimeout( function(){ s.media = ( o.media || "all" ); } );
 			break;
 
 			case "js" :
