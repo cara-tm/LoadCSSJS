@@ -36,12 +36,9 @@ var LoadCSSJS = function ( e, t, o ) {
 	if ( "undefined" != typeof s ) {
 
 		var a = document.getElementsByTagName( "script" )[0];
-		window.setTimeout(function() {
-				t == "css" ? 
-					document.getElementsByTagName("head")[0].appendChild(s) : 
-					a.parentNode.insertBefore(s, a);
-			}, 35);
-			window.clearTimeout(a);
+		t == "css" ? 
+			document.getElementsByTagName("head")[0].appendChild(s) : 
+		a.parentNode.insertBefore(s, a);
 
 	} else {
 
