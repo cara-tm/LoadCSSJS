@@ -34,5 +34,5 @@ Load a CSS file for all screen sizes, without any delay:
 
 Load a JS file for screens size starting to 520px, asynchromously, with a 30 milliseconds delay:
 
-    LoadCSSJS("../js/file.js", "js", {load: "async", delay: 30});
+    LoadCSSJS("../js/file.js", "js", {load: "async", min: "520", delay: 30});
     
