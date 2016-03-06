@@ -36,5 +36,5 @@ Load a JS file for screens size starting to 520px, asynchromously, with a 30 mil
 
     LoadCSSJS("../js/file.js", "js", {load: "async", min: "520", delay: 30});
     
-Notes: LoadCSSJS injects files into the DOM depending of your order but for best practices: CSS files before all JS files.
+Notes: LoadCSSJS injects files into the DOM depending of your order but respects best practices: CSS files before all JS files.
 LoadCSSJS it do not support resizing windows; pages need to be refreshed (who really resizes its window in a real world?).
