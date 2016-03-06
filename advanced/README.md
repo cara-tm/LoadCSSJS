@@ -9,7 +9,7 @@
 
 Place the LoadCSSJS script in your HTML document. Best choice (but not only) is within your `<head>` part.
 
-The, invoque the loader:
+Then, invoque the loader:
 
     LoadCSSJS("PATH/TO/YOUR-FILE.EX", "css or js", { YOUR OPTIONS HERE, COMMA SEPARATED }); 
 
