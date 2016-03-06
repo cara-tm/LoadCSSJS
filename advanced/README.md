@@ -15,12 +15,12 @@ Then, invoque the loader:
 
 ## Options
 
-    min: (integer) The minimum screen width to load the file. i.e. `min: "520"`. Default: unset.
-    max: (integer) The maximun screen width to load the file. i.e. `max: "320"`. Default: unset.
-    delay: (integer) The delay for loading the file (in milliseconds). i.e. `delay: 70`. Default: `35`.
-    media: (string) The media properties for CSS files only. i.e. `media: "only screen"`. Default: `all`.
-    load: (string) The async or defer attribute for JS files only. i.e. `load: "defer". Default: `async`. 
-    Note: to reset this attribute, just use an empty option. i.e. `load: ""`.
+    min: (integer) The minimum screen width to load the file. i.e. min: "520". Default: unset.
+    max: (integer) The maximun screen width to load the file. i.e. max: "320". Default: unset.
+    delay: (integer) The delay for loading the file (in milliseconds). i.e. delay: 70. Default: `35`.
+    media: (string) The media properties for CSS files only. i.e. media: "only screen". Default: `all`.
+    load: (string) The async or defer attribute for JS files only. i.e. load: "defer". Default: `async`. 
+    [Note: to reset this attribute, just use an empty option. i.e. load: ""]
     
 ##Examples
 
