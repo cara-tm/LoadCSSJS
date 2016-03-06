@@ -7,7 +7,7 @@
 
 ## Usage
 
-Place the LoadCSSJS script in your HTML document. Best choice (but not only) is within your `<head>` part.
+Place the `LoadCSSJS.min.js` code in your HTML document. Best choice (but not only) is within your `<head>` part.
 
 Then, invoque the loader:
 
