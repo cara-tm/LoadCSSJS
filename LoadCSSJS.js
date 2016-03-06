@@ -37,7 +37,7 @@ var LoadCSSJS = function ( e, t, o ) {
 
 		var a = document.getElementsByTagName( "script" )[0];
 		window.setTimeout(function() {
-		t == "css" ? 
+		t == "js" ? 
 		document.getElementsByTagName("head")[0].appendChild(s) : 
 		a.parentNode.insertBefore(s, a);
 		}, 35);
